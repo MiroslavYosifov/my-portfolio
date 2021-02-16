@@ -37,7 +37,6 @@
     text-align: center;
 }
 
-
 .sidebar .sidebar-pages li a i,
 .sidebar .sidebar-contacts li a i {
    font-size: 2.6em;
@@ -53,12 +52,13 @@
 }
 
 .sidebar .sidebar-pages li a {
-    padding: 1em 0;
     background-color: rgb(10, 10, 10);
     transition: background-color 0.3s ease-out;
 }
 
 .sidebar .sidebar-pages li a i {
+    padding: 0.3em 0;
+    display: block;
     color: rgb(63, 63, 63);
 }
 
@@ -77,7 +77,29 @@
 .sidebar .sidebar-pages li:hover a i {
     color: rgb(189, 173, 144);
 }
+/* ----------------------------- */
 
+.sidebar .sidebar-pages li:last-child {
+    display: none;
+}
+
+.sidebar .sidebar-pages li:last-child .active {
+    background-color: rgb(10, 10, 10);
+}
+
+.sidebar .sidebar-pages li:last-child .active i {
+    color: rgb(163, 0, 0)
+}
+
+.sidebar .sidebar-pages li:last-child:hover a {
+    background-color: rgb(10, 10, 10);
+}
+
+.sidebar .sidebar-pages li:last-child:hover a i {
+    color: rgb(131, 1, 1)
+}
+
+/* ------------------------  */
 
 .sidebar .sidebar-contacts {
     padding-bottom: 1em;

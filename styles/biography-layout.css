@@ -1,4 +1,4 @@
-    .biography-content {
+    .sidebar-wrapper {
         width: 26em;
         height: 100%;
     }
@@ -43,6 +43,7 @@
 
 
     .biography-text-content {
+        display: none;
         color: var(--biography-text-color);
         padding: 1em 0 0 1em;
         text-align: left;

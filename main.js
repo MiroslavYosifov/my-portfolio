@@ -10,7 +10,7 @@ function main () {
             document.querySelector("#portfolio-header").scrollIntoView({ behavior: 'smooth', block: 'end' });
         }, 1700);
     };
-    sidebarEvents.showHideBiography();
+    sidebarEvents.selectSidebarPages();
     backgroundEvents.backgroundParallaxAnimation();
     biographyNavEvents.changeSelectedMenu();
     portfolioNavEvents.scrollingToChoosedProject();
