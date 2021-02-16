@@ -1,0 +1,39 @@
+.biography-nav {
+    width: 100%;
+}
+
+.biography-nav ul {
+    display: flex;
+}
+
+.biography-nav ul li {
+    margin-right: 1em;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-out;
+}
+
+.biography-nav ul li:first-child {
+    padding-left: 0;
+}
+
+.biography-nav ul li a {
+    color: rgb(75, 72, 122);
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.biography-nav ul li:hover {
+    border-bottom: 2px solid rgb(89, 85, 158);
+}
+
+.biography-nav ul li:hover a {
+    color: rgb(89, 85, 158);
+}
+
+.biography-nav ul .selected {
+    border-bottom: 2px solid rgb(103, 98, 204);
+}
+
+.biography-nav ul .selected a {
+    color: rgb(103, 98, 204);
+}

@@ -1,0 +1,124 @@
+    .biography-content {
+        width: 26em;
+        height: 100%;
+    }
+
+    .biography-wrapper {
+        background: var(--biography-background-color);
+        height: 100%;
+        padding: 2em 1em;
+    }
+
+    .biography-media {
+        position: relative;
+        width: 50%;
+        overflow: hidden;
+        margin-left: 1em;
+        border-radius: 0.4em;
+        /* border: 1px solid rgb(139, 139, 139); */
+    }
+
+    .biography-media:before {
+        display: block;
+        content: '';
+        padding: 50%;
+    }
+
+    .biography-media:after {
+        position: absolute;
+        content: '';
+        top: 0; left: 0; bottom: 0; right: 0;
+        z-index: 10;
+        background: rgba(138, 138, 138, 0.24)
+    }
+
+    .biography-media img {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: auto;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    .biography-text-content {
+        color: var(--biography-text-color);
+        padding: 1em 0 0 1em;
+        text-align: left;
+    }
+
+    .biography-content-wrapper {
+        display: none;
+        transition: opacity 0.6s ease-out;
+    }
+
+    .biography-content-wrapper.showed {
+        display: block;
+    }
+
+    .biography-text-content h2,
+    .biography-text-content h3,
+    .biography-text-content h4,
+    .biography-text-content h5,
+    .biography-text-content h5 {
+        text-align: left;
+        /* color: var(--biography-text-color) */
+    }
+
+    .biography-text-content h2 {
+        color: rgb(111, 108, 122);
+        font-weight: bold;
+    }
+
+    .biography-text-content h3 {
+        color: rgb(111, 108, 122);
+        font-weight: bold;
+    }
+
+    .biography-text-content h4 {
+        color: lightgrey;
+        font-weight: bold;
+    }
+
+    .biography-text-content h5 {
+        margin-top: 0.4em;
+        color: lightgrey;
+    }
+
+    .biography-text-content h6 {
+        color: rgb(161, 161, 161);
+        font-size: 1.2em;
+    }
+
+    section.biography-text-content > section > section > ul {
+        margin-left: 1.6em;
+    }
+
+    section.biography-text-content > section > section > ul > li {
+        list-style-type: square;
+        font-size: 0.9em;
+    }
+
+    section.biography-text-content > section > section > section > ul {
+        margin-left: 1.6em;
+    }
+
+    section.biography-text-content > section > section > section > ul > li {
+        list-style-type: square;
+        font-size: 0.9em;
+    }
+
+
+.slide-change-opacity {
+    animation: slide-change-opacity 0.6s ease-in-out both;
+}
+
+@keyframes slide-change-opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+};

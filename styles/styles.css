@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,700,700i|Merriweather:400,400i,700,700i&display=swap');
+
+@import url('./variables.css');
+@import url('./layout.css');
+
+@import url('./sidebar.css');
+
+@import url('./biography-layout.css');
+@import url('./biography-nav.css');
+
+@import url('./about.css');
+@import url('./portfolio-layout.css');
+@import url('./portfolio-card.css');
+@import url('./portfolio-nav.css');
+
+/* BIOGARPHY CSS */
+
+
+
+/* PORTFOLIO CSS */

@@ -1,0 +1,144 @@
+.portfolio-card-wrapper {
+    display: flex;
+    /* background: rgb(46, 4, 114); */
+    width: 100%;
+    margin-bottom: 4em;
+    overflow: hidden;
+}
+
+/* .portfolio-card-wrapper:hover {
+    box-shadow: 0 0 0.3em 0.1em rgba(65, 65, 65, 0.425)
+} */
+
+.portfolio-card-wrapper > header {
+    background: rgb(46, 4, 114);
+    padding: 1em 1em 3em 1em;
+    text-align: center;
+}
+
+.portfolio-media-background {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 0.4em;
+}
+
+.portfolio-media-background:before {
+    display: block;
+    content: '';
+    padding: 36%;
+}
+
+/* .portfolio-media-background:after {
+    position: absolute;
+    content: '';
+    top: 0; left: 0; bottom: 0; right: 0;
+    z-index: 10;
+    background: rgba(155, 155, 155, 0.329);
+} */
+
+.portfolio-media-background .media-project-background {
+    position: absolute;
+    display: block;
+    width: auto;
+    height: 100%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.portfolio-media-background .media-project {
+    position: absolute;
+    display: block;
+    width: 80%;
+    height: auto;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 0.4em;
+    box-shadow: 0 0 0.6em 0.3em rgba(39, 39, 39, 0.541)
+}
+
+.portfolio-text-content {
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 2em 2em 2em 2em;
+}
+
+.portfolio-text-content .portfolio-links {
+    display: flex;
+    width: 100%;
+}
+
+.portfolio-text-content .portfolio-links a {
+    display: block;
+    font-size: 1.6em;
+    margin-right: 0.4em;;
+    color: rgb(103, 98, 204);
+}
+
+.portfolio-text-content .portfolio-links a i {
+    /* color: grey; */
+}
+/* tehcnology */
+.portfolio-text-content .portfolio-technology {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.portfolio-text-content .portfolio-technology section:nth-child(1) {
+
+}
+
+.portfolio-text-content .portfolio-technology section:nth-child(1) h2 {
+    font-size: 2.8em;
+    font-weight: bold;
+    color: rgb(100, 100, 119);
+}
+
+.portfolio-text-content .portfolio-technology section:nth-child(1) p {
+    color: grey;
+}
+
+.portfolio-text-content .portfolio-technology section:nth-child(2) {
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.portfolio-text-content .portfolio-technology span {
+    display: block;
+}
+
+.portfolio-text-content .portfolio-technology span i {
+    color: rgb(100, 100, 119);
+    font-size: 3em;
+}
+
+.portfolio-text-content .portfolio-technology h4 {
+    color: rgb(100, 100, 119);
+    font-weight: bold;
+    margin-left: 0.4em;
+    font-size: 2em;
+}
+
+.portfolio-text-content .portfolio-technology ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-text-content .portfolio-technology ul li {
+    padding: 0.2em 1em;
+    margin-right: 0.4em;
+    margin-bottom: 0.4em;
+    border-radius: 0.2em;
+    background: rgb(67, 67, 75);
+}
+
+.portfolio-text-content .portfolio-technology ul li p {
+    font-size: 1.2em;
+    color: rgb(189, 189, 189);
+}
+
+
