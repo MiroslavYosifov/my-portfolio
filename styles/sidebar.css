@@ -1,6 +1,7 @@
 .sidebar-content {
     display: flex;
     position: fixed;
+    z-index: 999;
     top: 0; left: var(--sidebar-content-position-left);
     height: var(--sidebar-content-height);
 }

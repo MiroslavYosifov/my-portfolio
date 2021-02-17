@@ -1,12 +1,16 @@
-.portfolio-card-wrapper {
+.portfolio-wrapper {
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.portfolio-card-wrapper {
     width: 100%;
     margin-bottom: 4em;
     overflow: hidden;
 }
 
 .portfolio-card-wrapper > header {
-    padding: 1em 1em 3em 1em;
     text-align: center;
 }
 
@@ -15,6 +19,10 @@
     width: 100%;
     overflow: hidden;
     border-radius: 0.4em;
+}
+
+.portfolio-media-background {
+    
 }
 
 .portfolio-media-background:before {
@@ -46,7 +54,6 @@
 
 .portfolio-text-content {
     width: 100%;
-    padding: 2em 2em 2em 2em;
 }
 
 .portfolio-text-content .portfolio-links {
@@ -86,6 +93,7 @@
 }
 
 .portfolio-text-content .portfolio-technology section:nth-child(1) p {
+
     color: var(--text-main-color)
 }
 
@@ -109,7 +117,7 @@
     color: var(--text-headers-color);
     font-weight: bold;
     margin-left: 0.4em;
-    font-size: 2em;
+    /* font-size: 2em; */
 }
 
 .portfolio-text-content .portfolio-technology ul {

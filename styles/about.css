@@ -1,35 +1,30 @@
 .about {
+    position: relative;
     min-height: 100vh;
     width: var(--portfolio-layout-width);
 }
 
-
 .speech-ballon-icon {
     position: absolute;
-    top: 42%; left: 58%;
     border-radius: 0.4em;
+    animation: scale-in-bl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: 1.4s;
 }
 .speech-ballon-icon i {
     display: block;
-    font-size: var(--font-size-icon-ballon);
     color: var(--sidebar-ballon-icon-color);
-    animation: scale-in-bl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-    animation-delay: 1.4s;
 }
 
 .about-text-content {
     position: absolute;
-    top: 42%; left: 58%;
-    width: var(--font-size-icon-ballon);
-    padding: 2em 3em 1em 3em;
     border-radius: 0.4em;
     z-index: 15;
     animation: scale-in-bl 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     animation-delay: 1.4s;
 }
 
+
 .about-text-content h1 {
-    font-size: 2.4em;
     font-weight: bold;
     font-style: italic;
     margin: 0;
@@ -38,7 +33,6 @@
 
 .about-text-content p {
     color: var(--text-headers-color);
-    font-size: 1.3em;
     font-style: italic;
 }
 

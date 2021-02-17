@@ -1,6 +1,13 @@
 :root {
+    --font-size-body-smaller: 1px;
+    --font-size-body-small: 14px;
+    --font-size-body-mid: 12px;
+    --font-size-body-larger: 13px;
+    --font-size-body-big: 14px;
+    --font-size-body-huge: 22px;
+
     --main-layout-width: 100vw;
-    
+
     --danger-base-buttons-color: rgb(99, 1, 1);
     --danger-hover-buttons-color: rgb(131, 1, 1);
     --danger-active-buttons-color: rgb(163, 0, 0);
@@ -36,7 +43,6 @@
     --sidebar-hover-button-outer-color: rgb(80, 80, 95);
     --sidebar-active-button-outer-color: rgb(100, 100, 119);
 
-
     --biography-background-color: rgb(10, 10, 10);
     --biography-text-color: rgb(145, 145, 145);
 
@@ -54,4 +60,6 @@
     /* ABOUT PAGE VARIABLES */
     --sidebar-ballon-icon-color: rgb(228, 209, 175);
     --font-size-icon-ballon: 32em;
+
+    
 }

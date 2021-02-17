@@ -1,44 +1,211 @@
-*, *:before, *:after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+@media ( min-width: 321px ) {
+    /* ABOUT RESPONSIVE */
+    .speech-ballon-icon i {
+        font-size: 20em;
+    }
+
+    .about-text-content {
+        width: 20em;
+    }
+
+    .speech-ballon-icon {
+        top: 30%; left: 5%;
+    }
+    
+    .about-text-content {
+        top: 30%; left: 5%;
+        padding: 1em 1em 1em 1em;
+    }
+
+    .about-text-content h1 {
+        font-size: 1.4em;
+    }
+    
+    .about-text-content p {
+        font-size: 1em;
+    }
+    
+
+    /* PORTFOLIO CARDS RESPONSIVE */
+
+    .portfolio-content {
+        width: 20em;
+        margin: 0 auto;
+    }
+
+    .portfolio-content header h1 {
+        font-size: 1.8em;
+    }
+
+    
+
 }
 
-::selection {
-    background-color: rgb(77, 83, 133);
-    color: wheat
+@media ( min-width: 480px ) {
+    /* ABOUT RESPONSIVE */
+
+    .speech-ballon-icon i {
+        font-size: 26em;
+    }
+
+    .speech-ballon-icon {
+        top: 30%; left: 15%;
+    }
+    
+    .about-text-content {
+        width: 26em;
+        top: 30%; left: 15%;
+        padding: 2em 3em 1em 3em;
+    }
+    
+    .about-text-content h1{
+        font-size: 1.8em;
+    }
+    
+    .about-text-content p {
+        font-size: 1.1em;
+    }
+
+
+    /* PORTFOLIO RESPONSIVE */
+    .portfolio-content {
+        width: 24em;
+        margin: 0 auto;
+    }
 }
 
-html {
-    box-sizing: border-box;
+@media ( min-width: 580px ) {
+    .portfolio-content {
+        width: 30em;
+        margin: 0 auto;
+    }
 }
 
-html {
-    box-sizing: border-box;
-    font: 14px/1.5 Verdana, Geneva, Tahoma, sans-serif;
+@media ( min-width: 768px ) {
+
+    /* SIDEBAR RESPONSIVE */
+
+    /* .sidebar-wrapper {
+        overflow: unset;
+    } */
+
+    /* ABOUT RESPONSIVE */
+
+    .speech-ballon-icon i {
+        font-size: var(--font-size-icon-ballon);
+    }
+    
+    .about-text-content {
+        width: var(--font-size-icon-ballon);
+    }
+
+    .about-text-content h1{
+        font-size: 2.4em;
+    }
+    
+    .about-text-content p {
+        font-size: 1.3em;
+    }
+
+     /* ABOUT RESPONSIVE */
+     .speech-ballon-icon {
+        top: 30%; left: 25%;
+    }
+    
+    .about-text-content {
+        top: 30%; left: 25%;
+    }
+
+    /* PORTFOLIO CARDS RESPONSIVE */
+
+    .portfolio-content {
+        width: 38em;
+        margin: 0 auto;
+    }
+
+    .portfolio-wrapper {
+        padding: 0;
+    }
+
+    .portfolio-card-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        /* padding: 0 6em; */
+    }
+
+
+    .portfolio-content header h1 {
+        font-size: 3em;
+    }
+
+    .portfolio-text-content {
+        padding: 2em 0;
+    }
+   
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 1em;
-    letter-spacing: 0.01em;
-    font-weight: 100;
-    font-family: sans-serif;
-    color: var(--text-headers-color);
+@media ( min-width: 960px ) {
+    
+    /* PORTFOLIO CARDS RESPONSIVE */
+   
+    .portfolio-content {
+        width: 44em;
+        margin: 0 auto;
+    }
+
+    .portfolio-content header h1 {
+        font-size: 4em;
+        margin-left: 0;
+    }
 }
 
-h1 { font-size: 2.6em; }
-h2 { font-size: 2.0em; }
-h3 { font-size: 1.8em; }
-h4 { font-size: 1.4em; }
-h5 { font-size: 1.2em; }
-h6 { font-size: 1.0em; }
+@media ( min-width: 1025px ) {
 
-a {
-    text-decoration: none;
+    /* ABOUT RESPONSIVE */
+    .speech-ballon-icon {
+        top: 42%; left: 54%;
+    }
+    
+    .about-text-content {
+        top: 42%; left: 54%;
+    }
+    /* PORTFOLIO CARDS RESPONSIVE */
+    .portfolio-wrapper {
+        padding: 0 2em 3em 4em;
+    }
+
+    .portfolio-content {
+        width: 70em;
+        margin: 0 auto;
+    }
+
+    .portfolio-card-wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0;
+    }
+
+    .portfolio-card-wrapper:nth-child(even) .portfolio-media-background {
+        order: 1;
+    }
+
+    .portfolio-text-content {
+        padding: 2em 2em;
+    }
+
+    .portfolio-content header h1 {
+        margin-left: 50%;
+    }
 }
 
-li {
-    list-style: none;
+@media ( min-width: 1200px ) {
+
+    /* PORTFOLIO CARDS RESPONSIVE */
+
+    .portfolio-content {
+        width: 80em;
+        margin: 0 auto;
+    }
 }
 
 body {

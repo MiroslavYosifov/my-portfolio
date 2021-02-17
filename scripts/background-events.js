@@ -1,5 +1,5 @@
 const backgroundEvents = (function () {
-    let background = document.querySelector('.portfolio');
+    let background = document.querySelector('.app');
     let positionY = 0;
     
     function backgroundParallaxAnimation () {
