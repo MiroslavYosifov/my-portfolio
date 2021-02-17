@@ -88,7 +88,7 @@
 }
 
 .portfolio-text-content .portfolio-technology section:nth-child(1) h2 {
-    font-size: 2.8em;
+    /* font-size: 2.8em; */
     font-weight: bold;
 }
 

@@ -1,10 +1,13 @@
 :root {
-    --font-size-body-smaller: 1px;
-    --font-size-body-small: 14px;
+    --font-size-body-smaller: 10px;
+    --font-size-body-small: 10px;
     --font-size-body-mid: 12px;
     --font-size-body-larger: 13px;
     --font-size-body-big: 14px;
     --font-size-body-huge: 22px;
+
+    --scroll-bar-background-color: rgb(36, 36, 36);
+    --scroll-bar-color: rgb(56, 56, 56);
 
     --main-layout-width: 100vw;
 
@@ -25,11 +28,15 @@
     
     /* SIDEBAR VARIABLES */
 
-    --sidebar-content-position-left: -26em;
+    /* --sidebar-content-position-left: -26em; */
+    --sidebar-content-position-left: -100vw;
     --sidebar-content-height: 100vh;
 
     --sidebar-width: 4em;
-    --sidebar-wrapper-width: 26em;
+    /* --sidebar-wrapper-width: 26em; */
+    --sidebar-wrapper-width: 100vw;
+
+    --sidebar-decrease-widht: 0;
 
     --sidebar-background-color: rgb(10, 10, 10);
 
@@ -60,6 +67,4 @@
     /* ABOUT PAGE VARIABLES */
     --sidebar-ballon-icon-color: rgb(228, 209, 175);
     --font-size-icon-ballon: 32em;
-
-    
 }

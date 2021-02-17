@@ -63,20 +63,42 @@ const sidebarEvents = (function () {
 
     function showHideSidebar(isSidebarOpen) {
 
-        if(isSidebarOpen) {
-            sidebar.classList.remove('slide-in-right');
-            sidebar.classList.add('slide-in-left');
-            document.documentElement.style.setProperty('--sidebar-content-position-left', '0');
-
-        } 
+        if(window.innerWidth > 580) {
+            changeSidberOnDesktop(isSidebarOpen)
+        }
         
-        if(!isSidebarOpen) {
-            sidebar.classList.remove('slide-in-left');
-            sidebar.classList.add('slide-in-right');
-            document.documentElement.style.setProperty('--sidebar-content-position-left', '-26em');
+        if(window.innerWidth <= 580) {
+            changeSidberOnMobile(isSidebarOpen)
         }
     };
 
+    function changeSidberOnMobile(isSidebarOpen) {
+        if(isSidebarOpen) {
+            sidebar.classList.remove('slide-in-right');
+            sidebar.classList.add('slide-in-left');
+        } 
+
+        if(!isSidebarOpen) {
+            if(window.innerWidth <= 580) {
+                sidebar.classList.remove('slide-in-left');
+                sidebar.classList.add('slide-in-right');
+            }
+        }
+    }
+
+    function changeSidberOnDesktop(isSidebarOpen) {
+
+        if(isSidebarOpen) {
+            sidebar.classList.remove('slide-in-right-desktop');
+            sidebar.classList.add('slide-in-left-desktop');
+        } 
+
+        if(!isSidebarOpen) {
+            sidebar.classList.remove('slide-in-left-desktop');
+            sidebar.classList.add('slide-in-right-desktop');
+        }
+    }
+    
     return {
         selectSidebarPages
     }

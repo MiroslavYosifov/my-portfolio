@@ -15,12 +15,12 @@
 }
 
 .contact-content span p {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: var(--text-main-color);
 }
 
 .contact-content span i {
     margin-right: 0.4em;
-    font-size: 2em;
+    font-size: 1.8em;
     color: var(--text-main-color);
 }

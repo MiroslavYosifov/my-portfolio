@@ -1,4 +1,26 @@
 @media ( min-width: 321px ) {
+
+    /* SIDEBAR RESPONSIVE */
+
+    .biography-wrapper {
+        overflow-y: scroll;
+        scrollbar-width: 0.6em;
+        scrollbar-color: var(--scroll-bar-color) var(--scroll-bar-background-color);
+    }
+
+    ::-webkit-scrollbar {
+      width: 0.6em;
+    }
+    
+    ::-webkit-scrollbar-track {
+      background: var(--scroll-bar-background-color); /* color of the tracking area */
+    }
+    
+    ::-webkit-scrollbar-thumb {
+      background-color: var(--scroll-bar-color); /* color of the scroll thumb */
+      border-radius: 0.2em; /* roundness of the scroll thumb */
+    }
+
     /* ABOUT RESPONSIVE */
     .speech-ballon-icon i {
         font-size: 20em;
@@ -9,11 +31,11 @@
     }
 
     .speech-ballon-icon {
-        top: 30%; left: 5%;
+        top: 40%; left: 20%;
     }
     
     .about-text-content {
-        top: 30%; left: 5%;
+        top: 40%; left: 20%;
         padding: 1em 1em 1em 1em;
     }
 
@@ -29,16 +51,25 @@
     /* PORTFOLIO CARDS RESPONSIVE */
 
     .portfolio-content {
-        width: 20em;
-        margin: 0 auto;
+        width: calc(100vw - var(--sidebar-width));
+        margin: 0 0 0 auto;
     }
 
     .portfolio-content header h1 {
         font-size: 1.8em;
     }
 
+    .sidebar-content {
+        left: calc(var(--sidebar-content-position-left) + var(--sidebar-width));
+    }
     
+    .sidebar-wrapper {
+        width: calc(var(--sidebar-wrapper-width) - var(--sidebar-width));
+    }
 
+    .portfolio-nav {
+        display: none;
+    }
 }
 
 @media ( min-width: 480px ) {
@@ -58,7 +89,7 @@
         padding: 2em 3em 1em 3em;
     }
     
-    .about-text-content h1{
+    .about-text-content h1 {
         font-size: 1.8em;
     }
     
@@ -72,22 +103,35 @@
         width: 24em;
         margin: 0 auto;
     }
+
+    .portfolio-nav {
+        display: block;
+        top: 50%; left: 88%;
+        transform: translate(0, -50%);
+    }
 }
 
 @media ( min-width: 580px ) {
+
+    /* PORTFOLIO RESPONSIVE */
     .portfolio-content {
         width: 30em;
         margin: 0 auto;
+    }
+
+
+    /* SIDEBAR RESPONSIVE */
+    .sidebar-content {
+        left: -26em;
+    }
+    
+    .sidebar-wrapper {
+        width: 26em;
     }
 }
 
 @media ( min-width: 768px ) {
 
-    /* SIDEBAR RESPONSIVE */
-
-    /* .sidebar-wrapper {
-        overflow: unset;
-    } */
 
     /* ABOUT RESPONSIVE */
 

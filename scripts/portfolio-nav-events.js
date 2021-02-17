@@ -18,7 +18,6 @@ const portfolioNavEvents = (function () {
             const section = document.querySelector(`section.portfolio > section.portfolio-content > div > section:nth-child(${e.target.dataset.index})`);
 
             if(e.target.dataset.index === "1") {
-                console.log('tuk su');
                 section.scrollIntoView({ behavior: 'smooth', block: 'center' });
             } 
 
