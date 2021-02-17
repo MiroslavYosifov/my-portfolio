@@ -34,13 +34,14 @@ const sidebarEvents = (function () {
     };
 
     function selectSidebarButton (element) {
-   
+
         if(!element.classList.contains('active')) {
+            
             element.classList.add('active');
             closeButton.parentNode.style.display = "block";
             closeButton.classList.add('active');
 
-            if(prevSelectedButton) {
+            if(prevSelectedButton && prevSelectedButton.id !== element.id) {
                 prevSelectedButton.classList.remove('active');
             };
 

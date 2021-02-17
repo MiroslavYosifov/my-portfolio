@@ -73,7 +73,12 @@
     display: block;
     font-size: 1.6em;
     margin-right: 0.4em;;
-    color: rgb(103, 98, 204);
+    color: rgb(93, 88, 185);
+    transition: color 0.3s ease-out;
+}
+
+.portfolio-text-content .portfolio-links a:hover {
+    color: rgb(99, 91, 247);
 }
 
 .portfolio-text-content .portfolio-links a i {
@@ -84,6 +89,10 @@
     display: flex;
     flex-wrap: wrap;
 
+}
+
+.portfolio-technology section > p {
+    font-size: 1.1em;
 }
 
 .portfolio-text-content .portfolio-technology section:nth-child(1) {
@@ -133,7 +142,13 @@
     margin-right: 0.4em;
     margin-bottom: 0.4em;
     border-radius: 0.2em;
-    background: rgb(67, 67, 75);
+    background-color: rgb(67, 67, 75);
+    transition: background-color 0.3s ease-out;
+}
+
+.portfolio-text-content .portfolio-technology ul li:hover {
+    background-color: rgb(81, 81, 92);
+   
 }
 
 .portfolio-text-content .portfolio-technology ul li p {
