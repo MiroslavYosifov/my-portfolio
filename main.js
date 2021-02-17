@@ -5,11 +5,13 @@ import { biographyNavEvents } from './scripts/biography-nav-events.js';
 import { portfolioNavEvents } from './scripts/portfolio-nav-events.js';
 
 function main () {
+    
     window.onload = (e) => {
         setTimeout(() => {
             document.querySelector("#portfolio-header").scrollIntoView({ behavior: 'smooth', block: 'end' });
         }, 1700);
     };
+
     sidebarEvents.selectSidebarPages();
     backgroundEvents.backgroundParallaxAnimation();
     biographyNavEvents.changeSelectedMenu();

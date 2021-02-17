@@ -5,11 +5,6 @@
 
 .contact-content h2 {
     text-align: left;
-    /* color: var(--biography-text-color) */
-}
-
-.contact-content h2 {
-    color: rgb(111, 108, 122);
     font-weight: bold;
 }
 
@@ -21,11 +16,11 @@
 
 .contact-content span p {
     font-size: 1.4em;
-    color: rgb(111, 108, 122);
+    color: var(--text-main-color);
 }
 
 .contact-content span i {
     margin-right: 0.4em;
     font-size: 2em;
-    color: rgb(111, 108, 122);
+    color: var(--text-main-color);
 }

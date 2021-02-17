@@ -1,19 +1,57 @@
 :root {
     --main-layout-width: 100vw;
+    
+    --danger-base-buttons-color: rgb(99, 1, 1);
+    --danger-hover-buttons-color: rgb(131, 1, 1);
+    --danger-active-buttons-color: rgb(163, 0, 0);
+    --danger-button-backgorund-color: rgb(10, 10, 10);
+
+    --links-base-color: rgb(93, 88, 185);
+    --links-hover-color: rgb(99, 91, 247);
+    --links-active-color: rgb(117, 110, 255);
+
+    --text-headers-color: rgb(100, 100, 119);
+    --text-headers-secondary-color: rgb(184, 184, 184);
+    --text-main-color: rgb(151, 151, 151);
+    --text--secondary-color: rgb(179, 175, 175);
+    --text-main-background-color: rgb(67, 67, 75);
+    
+    /* SIDEBAR VARIABLES */
+
+    --sidebar-content-position-left: -26em;
+    --sidebar-content-height: 100vh;
 
     --sidebar-width: 4em;
-    /* --sidebar-background-color: rgb(126, 126, 126); */
-    --sidebar-background-color: rgb(10, 10, 10);
-    --sidebar-border-color: rgb(73, 73, 73);
-    
-    --sidebar-content-position-left: -26em;
+    --sidebar-wrapper-width: 26em;
 
-    --biography-layout-width: 20%; 
+    --sidebar-background-color: rgb(10, 10, 10);
+
+    --sidebar-border-color: rgb(46, 46, 46);
+
+    --sidebar-base-button-inner-color: rgb(63, 63, 63);
+    --sidebar-hover-button-inner-color: rgb(187, 165, 124);
+    --sidebar-active-button-inner-color: rgb(218, 189, 137);
+
+    --sidebar-base-button-outer-color: rgb(10, 10, 10);
+    --sidebar-hover-button-outer-color: rgb(80, 80, 95);
+    --sidebar-active-button-outer-color: rgb(100, 100, 119);
+
+
     --biography-background-color: rgb(10, 10, 10);
     --biography-text-color: rgb(145, 145, 145);
 
+    /* PORTFOLIO VARIABLES */
+
     --portfolio-layout-width: 100%;
     --portfolio-layout-background-color: rgb(15, 15, 15);
-    --portfolio-wrapper-height: 90%;
-    --portfolio-content-header-height : 10%
+
+    --portfolio-links-base-color: rgb(97, 58, 0);
+    --portfolio-links-hover-color: rgb(206, 141, 0);
+    --portfolio-links-selected-color: rgb(255, 174, 0);
+
+    --portfolio-border-images: white;
+
+    /* ABOUT PAGE VARIABLES */
+    --sidebar-ballon-icon-color: rgb(228, 209, 175);
+    --font-size-icon-ballon: 32em;
 }

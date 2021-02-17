@@ -17,23 +17,23 @@
 }
 
 .biography-nav ul li a {
-    color: rgb(75, 72, 122);
+    color: var(--links-base-color);
     font-weight: bold;
     font-size: 1.2em;
 }
 
 .biography-nav ul li:hover {
-    border-bottom: 2px solid rgb(89, 85, 158);
+    border-bottom: 2px solid var(--links-hover-color);
 }
 
 .biography-nav ul li:hover a {
-    color: rgb(89, 85, 158);
+    color: var(--links-hover-color);
 }
 
 .biography-nav ul .selected {
-    border-bottom: 2px solid rgb(103, 98, 204);
+    border-bottom: 2px solid var(--links-active-color);
 }
 
 .biography-nav ul .selected a {
-    color: rgb(103, 98, 204);
+    color: var(--links-active-color);
 }

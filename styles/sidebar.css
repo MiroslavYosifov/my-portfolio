@@ -1,18 +1,20 @@
 .sidebar-content {
+    display: flex;
     position: fixed;
     top: 0; left: var(--sidebar-content-position-left);
-    display: flex;
-    height: 100vh;
-    background: grey;
+    height: var(--sidebar-content-height);
+}
+
+.sidebar-wrapper {
+    width: var(--sidebar-wrapper-width);
 }
 
 .sidebar {
     display: flex;
     flex-wrap: wrap;
     width: var(--sidebar-width);
-    height: 100vh;
     background: var(--sidebar-background-color);
-    border-left: 1px solid rgb(46, 46, 46);
+    border-left: 1px solid var( --sidebar-border-color);
 }
 
 .sidebar .sidebar-pages,
@@ -26,8 +28,6 @@
 .sidebar .sidebar-contacts li {
     display: block;
     width: 100%;
-    background: var(--sidebar-background-color)
-    
 }
 
 .sidebar .sidebar-pages li a,
@@ -43,71 +43,63 @@
    transition: color 0.3s ease-out;
 }
 
+/* SIDEBAR-PAGES NAVIGATION STYLES*/
+
 .sidebar .sidebar-pages {
     align-content: flex-start;
 }
 
 .sidebar .sidebar-pages li {
-    border-bottom: 1px solid rgb(46, 46, 46);
+    border-bottom: 1px solid var(--sidebar-border-color);
 }
 
 .sidebar .sidebar-pages li a {
-    background-color: rgb(10, 10, 10);
     transition: background-color 0.3s ease-out;
 }
 
 .sidebar .sidebar-pages li a i {
     padding: 0.3em 0;
     display: block;
-    color: rgb(63, 63, 63);
+    color: var(--sidebar-base-button-inner-color);
 }
 
 .sidebar .sidebar-pages li .active {
-    background: rgb(100, 100, 119);
+    background: var(--sidebar-active-button-outer-color);
 }
 
 .sidebar .sidebar-pages li .active i {
-    color: rgb(223, 200, 157);
+    color: var(--sidebar-active-button-inner-color);
 }
 
 .sidebar .sidebar-pages li:hover a {
-    background: rgb(80, 80, 95);
+    background: var(--sidebar-hover-button-outer-color);
 }
 
 .sidebar .sidebar-pages li:hover a i {
-    color: rgb(189, 173, 144);
+    color: var(--sidebar-hover-button-inner-color);
 }
-/* ----------------------------- */
 
 .sidebar .sidebar-pages li:last-child {
     display: none;
 }
 
 .sidebar .sidebar-pages li:last-child .active {
-    background-color: rgb(10, 10, 10);
+    background-color: var(--danger-button-backgorund-color);
 }
 
 .sidebar .sidebar-pages li:last-child .active i {
-    color: rgb(163, 0, 0)
-}
-
-.sidebar .sidebar-pages li:last-child:hover a {
-    background-color: rgb(10, 10, 10);
+    color: var(--danger-active-buttons-color);
 }
 
 .sidebar .sidebar-pages li:last-child:hover a i {
-    color: rgb(131, 1, 1)
+    color: var(--danger-hover-buttons-color);
 }
 
-/* ------------------------  */
+/* SIDEBAR-CONTACTS NAVIGATION STYLES*/
 
 .sidebar .sidebar-contacts {
     padding-bottom: 1em;
     align-content: flex-end;
-}
-
-.sidebar .sidebar-contacts li {
-    
 }
 
 .sidebar .sidebar-contacts li a {
@@ -115,12 +107,16 @@
 }
 
 .sidebar .sidebar-contacts li a i {
-    color: rgb(63, 63, 63);
+    color: var(--sidebar-base-button-inner-color)
 }
 
 .sidebar .sidebar-contacts li a:hover i {
-    color: rgb(223, 200, 157);
+    color: var(--sidebar-hover-button-inner-color);
 }
+
+
+/* ANIMATIONS */
+
 
 .slide-in-left {
 	animation: slide-in-left 0.5s cubic-bezier(0.150, 0.460, 0.450, 0.940) both;
