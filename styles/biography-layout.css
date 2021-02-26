@@ -35,7 +35,6 @@
         transform: translate(-50%, -50%);
     }
 
-
     .biography-text-content {
         display: none;
         color: var(--biography-text-color);

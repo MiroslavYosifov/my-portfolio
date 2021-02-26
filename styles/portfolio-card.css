@@ -40,6 +40,10 @@
     transform: translate(-50%, -50%);
 }
 
+/* .portfolio-media-background a:s {
+    background: red;
+} */
+
 .portfolio-media-background .media-project {
     position: absolute;
     display: block;
@@ -49,7 +53,12 @@
     transform: translate(-50%, -50%);
     border: 1px solid var(--portfolio-border-images);
     border-radius: 0.4em;
-    box-shadow: 0 0 0.6em 0.3em rgba(39, 39, 39, 0.541)
+    box-shadow: 0 0 0.6em 0.3em rgba(39, 39, 39, 0.541);
+    transition: width 0.2s ease-in-out;
+}
+
+.portfolio-media-background .media-project:hover {
+    width: 95%;
 }
 
 .portfolio-text-content {

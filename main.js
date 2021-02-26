@@ -1,18 +1,13 @@
 import 'regenerator-runtime/runtime';
+import { onSiteLoadEvents } from './scripts/onSiteLoad-events.js';
 import { sidebarEvents } from './scripts/sidebar-events.js';
 import { backgroundEvents } from './scripts/background-events.js';
 import { biographyNavEvents } from './scripts/biography-nav-events.js';
 import { portfolioNavEvents } from './scripts/portfolio-nav-events.js';
 
 function main () {
-    
-    window.onload = (e) => {
-        setTimeout(() => {
-            document.querySelector("#portfolio-header").scrollIntoView({ behavior: 'smooth', block: 'end' });
-        }, 1700);
-    };
-
-    sidebarEvents.selectSidebarPages();
+    onSiteLoadEvents.openSidebar();
+    sidebarEvents.sideBarController();
     backgroundEvents.backgroundParallaxAnimation();
     biographyNavEvents.changeSelectedMenu();
     portfolioNavEvents.scrollingToChoosedProject();

@@ -17,15 +17,15 @@
 .portfolio-content header h1 {
     text-align: left;
     font-weight: bold;
-    margin-bottom: 1em;
-    color: rgb(65, 55, 112);
+    padding-bottom: 2em;
+    color: rgb(86, 73, 141);
     transition: color 0.3s ease-out;
 
 }
 
 .portfolio-content header h1:hover {
     cursor: pointer;
-    color: rgb(168, 141, 92);
+    color: rgb(72, 41, 129);
 }
 
 .portfolio-content header h1 span {

@@ -11,27 +11,35 @@ const sidebarEvents = (function () {
 
     let prevSelectedButton;
 
-    function selectSidebarPages() {
+    function sideBarController() {
         sidebarPages.addEventListener('click', function(e) {
             e.preventDefault();
-
-            if(e.target.parentNode.id === "ctx-close-button") {
-                isSidebarOpen = false;
-                closeButton.parentNode.style.display = "none";
-                closeButton.classList.remove('active');
-                prevSelectedButton.classList.remove('active');
-            }
-
-            if(e.target.nodeName === 'I' && e.target.parentNode.id !== "ctx-close-button") {
-                isSidebarOpen = true;
-                
-                selectSidebarButton(e.target.parentNode)
-                changeSidebarContentTemplate(e.target.parentNode.id);
-            };
-
-            showHideSidebar(isSidebarOpen);
+            selectSidebarPages(e.target);
         });
     };
+
+    // function openSidebarOnload ('load',) {
+
+    // }
+
+    function selectSidebarPages(e) {
+        console.log(e.parentNode);
+        if(e.parentNode.id === "ctx-close-button") {
+            isSidebarOpen = false;
+            closeButton.parentNode.style.display = "none";
+            closeButton.classList.remove('active');
+            prevSelectedButton.classList.remove('active');
+        }
+
+        if(e.nodeName === 'I' && e.parentNode.id !== "ctx-close-button") {
+            isSidebarOpen = true;
+            
+            selectSidebarButton(e.parentNode)
+            changeSidebarContentTemplate(e.parentNode.id);
+        };
+
+        showHideSidebar(isSidebarOpen);
+    }
 
     function selectSidebarButton (element) {
 
@@ -100,6 +108,7 @@ const sidebarEvents = (function () {
     }
     
     return {
+        sideBarController,
         selectSidebarPages
     }
 })();

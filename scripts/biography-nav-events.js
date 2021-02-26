@@ -10,7 +10,6 @@ const biographyNavEvents = (function () {
     prevPage.classList.add('showed');
 
     function changeSelectedMenu() {
-
         [...nav.querySelectorAll('li')].map(li => li.addEventListener('click', function(e) {
             e.preventDefault()
             currentElement = e.currentTarget;

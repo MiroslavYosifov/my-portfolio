@@ -61,6 +61,9 @@
     color: var(--sidebar-base-button-inner-color);
 }
 
+
+
+
 .sidebar .sidebar-pages li .active {
     background: var(--sidebar-active-button-outer-color);
 }
@@ -110,6 +113,18 @@
 
 .sidebar .sidebar-contacts li a:hover i {
     color: var(--sidebar-hover-button-inner-color);
+}
+
+.sidebar-contacts li:nth-child(1) a i{
+    color: rgb(151, 151, 151);
+}
+
+.sidebar-contacts li:nth-child(2) a i {
+    color: rgb(20, 95, 141);
+}
+
+.sidebar-contacts li:nth-child(3) a i {
+    color: rgb(17, 75, 133);
 }
 
 

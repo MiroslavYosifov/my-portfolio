@@ -25,3 +25,17 @@
 .portfolio-nav ul .selected {
     background-color: var(--portfolio-links-selected-color);
 };
+
+
+.slide-in-right-desktop {
+    animation: change-color 0.5s cubic-bezier(0.150, 0.460, 0.450, 0.940) both;
+}
+
+@keyframes change-color {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: -26em;
+    }
+}

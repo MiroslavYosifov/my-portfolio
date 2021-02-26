@@ -66,3 +66,9 @@ li {
     list-style: none;
 }
 
+blockquote {
+    color: var(--text-headers-secondary-color);
+    /* font-style: italic; */
+    font-size: 1.2em;
+}
+
