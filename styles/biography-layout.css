@@ -23,7 +23,7 @@
         content: '';
         top: 0; left: 0; bottom: 0; right: 0;
         z-index: 10;
-        background: rgba(138, 138, 138, 0.24)
+        background: rgba(138, 138, 138, 0.24);
     }
 
     .biography-media img {
