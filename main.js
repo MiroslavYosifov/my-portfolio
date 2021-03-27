@@ -1,4 +1,4 @@
-// import 'regenerator-runtime/runtime';
+import 'regenerator-runtime/runtime';
 import { onSiteLoadEvents } from './scripts/onSiteLoad-events.js';
 import { sidebarEvents } from './scripts/sidebar-events.js';
 import { backgroundEvents } from './scripts/background-events.js';
